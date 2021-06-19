@@ -1,0 +1,49 @@
+#border{
+    border: 1px solid brown;
+    margin-bottom: 25px;
+}
+#median{
+    border-top: 1px solid red;
+}
+#line{
+    border-left: 1px solid red;
+}
+#line1{
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+.catalogue{
+    text-align:center;
+    color: royalblue;
+}
+
+h1{
+    color:black;
+    text-align:center;  /* 文本居中 */
+    margin: 25px;
+}
+h3{
+    color: red;
+}
+.text-indent{
+    text-indent:2em
+}
+#historyr img{
+    width: 25%;
+    height: 150px;
+    float: right;
+}
+#historyl img{
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+.beauty{
+    margin: 25px;
+    /* margin-bottom: 25px; */
+}
+#histor img{
+    width: 25%;
+    height: 200px;
+    float: left;
+}

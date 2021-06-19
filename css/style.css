@@ -1,0 +1,278 @@
+@charset "utf-8";
+html,
+body,
+header,
+#intro {
+    height: 100%;
+}
+
+#intro {
+    background: url("../myimage/qianjiangCity.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover; /* 针对Chrome, Safari, Edge等浏览器 */
+    -moz-background-size: cover;    /* 针对Firefox浏览器 */
+    -o-background-size: cover;      /* 针对Operallq */
+    background-size: cover;         /* 通用 */
+}
+.top-nav-collapse {
+  background-color: #24355C;
+}
+
+/* #qianzhong{
+  background-color:rgb(128, 128, 128)
+} */
+h2{
+  color:red;
+  text-align:center;  /* 文本居中 */
+  margin: 25px;
+}
+.grade{
+  color:red;
+}
+.text-indent{
+  text-indent:2em
+}
+/* .qz{
+  float:right; 
+}*/
+.xh{
+  float:left;
+}
+#zhuoshui .zs img{
+	width: 50%;
+	margin-right: 15px;
+	margin-bottom: 15px;
+    float:left;
+}
+#border{
+  border: 1px solid brown;
+  width: 40%;
+  color: red;
+}
+#balahu img{
+	float: right;
+}
+#yangtoushan img{
+	width: 40%;
+	margin-right: 25px;
+	margin-bottom: 15px;
+	float: left;
+}
+#chicken-offal img{
+	width: 100%;
+	margin-bottom:10px ;
+}
+#hand-waving img{
+	float: right;
+	margin-left:10px ;
+}
+#shopping img{
+	float: left;
+	margin-right: 10px;
+}
+/* 动画效果 */
+*{
+	margin:0;
+	padding:0;
+}
+/* .suofang .wenzi .qz{
+  color: brown;
+} */
+.wenzi{
+	position:absolute;
+	top:0;
+	left:0;
+  /* right: 0; */
+}
+.box:hover img{
+	opacity:0.5;
+	transition:opacity  2s  ease-in;
+}
+.box:hover .wenzi p,.box:hover .wenzi h4{
+	transition: all 2s ease-in;
+}
+/* 缩放 */
+#boxs1{
+	width:45%;
+	height:350px;
+	overflow:hidden;
+	position:relative;
+	float:right;
+}
+.suofang{
+	background:#0D000F;
+}
+.suofang .wenzi{
+	width:100%;
+	height:100%;
+}
+.suofang .wenzi h4{
+	margin-top:15%;
+	margin-left:15%;
+	color:brown;
+	font-weight:bold;
+	position:relative;
+	transform:scale(1.2,1.2);
+	opacity:0;
+}
+.suofang .wenzi p{
+	margin-top:5px;
+	margin-left:15%;
+    margin-right: 15%;
+	color:#FFF;
+	transform:scale(1.2,1.2);
+	opacity:0;
+}	
+.suofang .wenzi .kuang{
+	width:80%;
+	height:80%;
+	border:2px solid #fff;
+	position:absolute;
+	top:10%;
+	left:10%;
+	transform:scale(1.2,1.2);
+	opacity:0;
+}
+.suofang:hover img{
+	transform:scale(1.1,1.1);
+	transition: all 2s ease-in;
+}
+.suofang:hover .wenzi h4,.suofang:hover .wenzi p{
+	transform:scale(1,1);
+	opacity:1;
+	
+}
+.suofang:hover .wenzi .kuang{
+	transform:scale(1,1);
+	opacity:1;
+	transition:all 2s ease-in;
+	
+}
+/* 旋转 */
+#boxs2{
+	width:45%;
+	height:350px;
+	overflow:hidden;
+	position:relative;
+	float:left;
+}
+.xuanzhuan{
+	background-color:#0F0000;
+}
+.xuanzhuan .wenzi {
+	color:#fff;
+	width:100%;
+	height:100%;
+}
+.xuanzhuan .wenzi h4{
+	margin-top:15%;
+	margin-left:15%;
+	color: red;
+}
+.xuanzhuan .wenzi p{
+	margin-top:5px;
+	margin-left:15%;
+	margin-right: 15%;
+	transform:translate(0,100px);
+	opacity:0;
+}
+.xuanzhuan .wenzi .kuang{
+	width:80%;
+	height:80%;
+	border:2px solid #fff;
+	position:absolute;
+	top:10%;
+	left:10%;
+	transform:translate(0,-300px) rotate(0deg);	
+}
+.xuanzhuan:hover .kuang{
+	transform:translate(0,0) rotate(360deg);
+	transition: all 2s ease-in;
+}
+.xuanzhuan:hover .wenzi p{
+	transform:translate(0,0);
+	opacity:1;
+}
+@media (min-width:1001px){
+	.box{
+		width:33%;
+    }
+}
+@media (max-width:1000px){
+	.box{
+		width:50%;
+    }
+}
+@media (max-width:600px){
+	.box{
+		width:100%;
+    }
+}
+/* 斜切 */
+#boxsx{
+	width:40%;
+	height:300px;
+	margin: 15px;
+	overflow:hidden;
+	position:relative;
+	float:left;
+}
+.xieqie{
+	background-color:#000515;}
+.xieqie .wenzi{
+	top:30%;
+	left:15%;
+	color:#FFF;
+	}
+.xieqie .wenzi p{
+	margin-top:5px;
+	transform:skew(90deg)}
+.xieqie .wenzi h4{
+	transform:skew(90deg);
+	color: crimson;
+}
+.xieqie:hover .wenzi h4,.xieqie:hover .wenzi p{
+	transform:skew(0deg);
+}
+/* 平移 */
+#boxsp{
+	width:45%;
+	height:400px;
+	margin: 15px;
+	overflow:hidden;
+	position:relative;
+	float:left;
+}
+#boxsp img{
+	width: 100%;
+	height: 100%;
+}
+#boxsp .wenzi h4{
+	color: crimson;
+}
+.pingyi{
+	background-color: #333;
+	}
+.pingyi .wenzi{
+	padding:20px;
+	color:#FFF;
+	}
+.pingyi .wenzi p{
+	color:#999;
+	background-color:#FFF;
+	margin-top:5px;
+	transform:translate(-300px)}
+.pingyi:hover .wenzi p{
+    transform:translate(0);
+}
+.pingyi:hover .wenzi p:nth-of-type(1){
+    transition-delay:0.1s;
+}
+.pingyi:hover .wenzi p:nth-of-type(2){
+    transition-delay:0.2s;
+}	
+.pingyi:hover .wenzi p:nth-of-type(3){
+    transition-delay:0.3s;
+}
+/* 动画效果 */
+
+

@@ -1,0 +1,12 @@
+h1{
+    color:black;
+    text-align:center;  /* 文本居中 */
+    margin: 25px;
+}
+.text-indent{
+    text-indent:2em
+  }
+  #hand-waving img{
+	float: right;
+	margin-left:10px ;
+}

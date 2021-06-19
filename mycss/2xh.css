@@ -1,0 +1,105 @@
+@charset "utf-8";
+#border{
+    width: 25%;
+    border: 1px solid brown;
+    margin-bottom: 25px;
+}
+#line{
+    border-top: 1px solid red;
+}
+.intro #border{
+    float: right;
+}
+.catalogue{
+    text-align:center;
+    color: royalblue;
+}
+h1{
+    color:black;
+    text-align:center;  /* 文本居中 */
+    margin: 25px;
+}
+h3{
+    color: red;
+}
+.text-indent{
+    text-indent:2em
+}
+#h01 img{
+    float:right;
+}
+#h02 img{
+    width: 35%;
+	height: 450px;
+	margin-right: 15px;
+    float:left;
+}
+.song{
+	color:crimson;
+}
+/* #condition{
+    float: left;
+}
+.longth{
+    width: 80%;
+} */
+/* 斜切动画 */
+*{
+	margin:0;
+	padding:0;
+}
+#boxs{
+    margin: 25px;
+	width:40%;
+	height:300px;
+	overflow:hidden;
+	position:relative;
+	float:left;
+}
+.wenzi{
+	position:absolute;
+	top:0;
+	left:0;
+}
+.box:hover img{
+	opacity:0.5;
+	transition:opacity  2s  ease-in;
+}
+.box:hover .wenzi p,.box:hover .wenzi h4{
+	transition: all 2s ease-in;
+}
+.xieqie{
+	background-color:#000515;
+}
+.xieqie .wenzi{
+	top:30%;
+	left:15%;
+	color:#FFF;
+}
+.xieqie .wenzi p{
+	margin-top:5px;
+	transform:skew(90deg)
+}
+.xieqie .wenzi h4{
+	transform:skew(90deg);
+    color: crimson;
+}
+.xieqie:hover .wenzi h4,.xieqie:hover .wenzi p{
+	transform:skew(0deg);
+}
+@media (min-width:1001px){
+	.box{
+		width:33%;
+    }
+}
+@media (max-width:1000px){
+	.box{
+		width:50%;
+    }
+}
+@media (max-width:600px){
+	.box{
+		width:100%;
+    }
+}
+/* 斜切动画 */
